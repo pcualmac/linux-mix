@@ -43,10 +43,10 @@ addvagrantbox()
     echo "$boxList"
     for i in "$boxList";
     do
-        if [[ $i == *"sd-Centos8Php74fci"* ]]; then
+        if [[ $i == *"Centos8Php74fci"* ]]; then
             echo "It's there!"
         else
-            boxinstal=$(vagrant box add sd-Centos8Php74fci sd-Centos8Php74fci.box)
+            boxinstal=$(vagrant box add Centos8Php74fci Centos8Php74fci.box)
         fi
     done
 }
