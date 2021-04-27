@@ -1,0 +1,14 @@
+#How to install
+#copy and paste from [alias] to [f'] in .bash_profile or ~/.bashrc ....
+
+#How to test
+#In any dir without phpunit under vendor type _phpunit will result in error
+alias _phpunit='f()
+{ 
+    if [[ -n `find ./vendor -name phpunit` ]]
+    then
+        $bash ./vendor/bin/phpunit
+    else
+        echo "phpunit not found"
+    fi
+}; f'
